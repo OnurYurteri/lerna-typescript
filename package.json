@@ -1,0 +1,14 @@
+{
+  "name": "@my-app/root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start:client": "yarn workspace @my-app/client start",
+    "start:first-service": "yarn workspace @my-app/first-service dev"
+  }
+}
